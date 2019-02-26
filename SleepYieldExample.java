@@ -26,8 +26,8 @@ public class SleepYieldExample {
 		Thread producer = new Producer();
 		Thread consumer = new Consumer();
 		
-		producer.setPriority(Thread.MIN_PRIORITY);
 		consumer.setPriority(Thread.MAX_PRIORITY);
+		producer.setPriority(Thread.MIN_PRIORITY);
 		
 		producer.start();
 		consumer.start();
